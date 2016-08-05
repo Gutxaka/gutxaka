@@ -1,0 +1,14 @@
+{
+  "name" : "Airspace Theme",
+  "description" : "",
+  "thumb" : "images/image.png",
+  "helpers": [
+    "Themes::AirspaceTheme::MainHelper"
+  ],
+  "hooks": {
+    "on_active": ["airspace_theme_on_install_theme"],
+    "on_inactive": ["airspace_theme_on_uninstall_theme"],
+    "on_theme_settings": ["airspace_theme_settings"]
+    //here all your hooks
+  }
+}
