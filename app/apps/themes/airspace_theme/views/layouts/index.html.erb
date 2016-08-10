@@ -9,7 +9,7 @@
         <!-- END META SECTION -->
         <%= yield :head %>
         <%= stylesheet_link_tag theme_asset_path("css/main") %>
-        <%= javascript_include_tag theme_asset_path("js/main.js") %>
+        <%= javascript_include_tag theme_asset_path("js/main.js")%>
         <%= raw the_head %>
     </head>
     <body>
@@ -79,19 +79,9 @@
     <!-- ./container -->
             <!-- load Js -->
     <%= javascript_include_tag theme_asset_path("js/jquery-1.11.3.min.js") %>
-    <%= javascript_include_tag theme_asset_path("js/bootstrap.min.js") %>
+    <%= javascript_include_tag theme_asset_path("js/bootstrap.min.js"),'data-turbolinks-eval' => false  %>
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false"></script>
-    <%= javascript_include_tag theme_asset_path("js/waypoints.min.js") %>
-    <%= javascript_include_tag theme_asset_path("js/lightbox.js") %>
-    <%= javascript_include_tag theme_asset_path("js/jquery.counterup.min.js") %>
-    <%= javascript_include_tag theme_asset_path("js/owl.carousel.min.js") %>
-    <%= javascript_include_tag theme_asset_path("js/html5lightbox.js") %>
-    <%= javascript_include_tag theme_asset_path("js/jquery.mixitup.js") %>
-    <%= javascript_include_tag theme_asset_path("js/wow.min.js") %>
-    <%= javascript_include_tag theme_asset_path("js/jquery.scrollUp.js") %>
-    <%= javascript_include_tag theme_asset_path("js/jquery.sticky.js") %>
-    <%= javascript_include_tag theme_asset_path("js/jquery.nav.js") %>
-    <%= javascript_include_tag theme_asset_path("js/secondary.js") %>
+   
     <%= yield :scripts %>
 
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57a334844b849c5c"></script>

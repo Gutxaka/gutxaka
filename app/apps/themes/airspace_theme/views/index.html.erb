@@ -550,3 +550,17 @@
             </div>
         </footer>
     </div>
+
+    <% content_for :scripts do %>
+        <%= javascript_include_tag theme_asset_path("js/waypoints.min.js") %>
+        <%= javascript_include_tag theme_asset_path("js/lightbox.js") %>
+        <%= javascript_include_tag theme_asset_path("js/jquery.counterup.min.js") %>
+        <%= javascript_include_tag theme_asset_path("js/owl.carousel.min.js") %>
+        <%= javascript_include_tag theme_asset_path("js/html5lightbox.js") %>
+        <%= javascript_include_tag theme_asset_path("js/jquery.mixitup.js") %>
+        <%= javascript_include_tag theme_asset_path("js/wow.min.js") %>
+        <%= javascript_include_tag theme_asset_path("js/jquery.scrollUp.js") %>
+        <%= javascript_include_tag theme_asset_path("js/jquery.sticky.js") %>
+        <%= javascript_include_tag theme_asset_path("js/jquery.nav.js") %>
+        <%= javascript_include_tag theme_asset_path("js/secondary.js") %>
+    <% end %>
